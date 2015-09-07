@@ -1,0 +1,161 @@
+@import "vendors/bootstrap/bootstrap.less";
+
+@primary: #0383C0;
+// @primary: #C83C27;
+
+a{
+	color: @primary;
+}
+
+.navbar {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	background: @primary url(../img/navbar.png) repeat-x;
+	border: 1px #CCC solid;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default a:hover{
+	background: none;
+	color: @primary !important;
+	font-weight: bold;
+}
+
+.logo{
+	width: 100%;
+	margin: 40px 0 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.primary{
+	color: @primary;
+}
+
+.subtext{
+	color: #666;
+	font-size: 16px;
+	font-weight: 300;
+	margin-left: 45px;
+}
+
+header form{
+	float: right;
+	margin-top: 30px;
+	background: @primary;
+	padding: 15px;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+#products img{
+	width: 130px;
+	height: 130px;
+}
+
+.jumbotron{
+	overflow: auto;
+	padding: 0 !important;
+
+	p{
+		font-size: 15px;
+	}
+}
+
+.tablist{
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 30%;
+
+	li{
+		background-color: #CCC;
+		list-style: none;
+		color: #666;
+		padding: 15px 10px 15px 20px;
+		margin-bottom: 5px;
+		width: 100%;
+		font-size: 15px;
+	}
+
+	li.active,
+	li.active a{
+		background-color: @primary;
+		color: #FFF;
+	}
+
+	a{
+		color: #666;
+		display: block;
+		text-decoration: none;
+	}
+}
+
+.tab-content{
+	float: right;
+	width: 70%;
+	background-color: @primary;
+	color: #FFF;
+	overflow: hidden;
+	height: 275px;
+	padding-top: 20px;
+}
+
+.slide-img{
+	float: right;
+	width: 50%;
+}
+
+.tab-text{
+	float: left;
+	width: 40%;
+	margin-left: 40px;
+}
+
+.main-img{
+	width: 100%;
+}
+
+footer{
+	text-align: center;
+	height: 60px;
+	background-color: #F4F4F4;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+
+@media(max-width: 960px){
+	header form{
+		width: 100% !important;
+	}
+}
+
+@media(max-width: 768px){
+	.slide-img{
+		display: none;
+	}
+
+	.tab-text{
+		float: none;
+		width: 80%;
+	}
+
+	.navbar a{
+		color: #FFF !important;
+	}
+
+	.navbar a:hover{
+		color: #CCC !important;
+	}
+
+	.navbar-form{
+		display: none;
+	}
+}
+
+@media(max-width: 600px){
+	.tab-content{
+		height: 350px;
+	}
+}

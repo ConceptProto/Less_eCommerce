@@ -4,36 +4,253 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Starter Template for Bootstrap</title>
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>eCommerce Template</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Project name</a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </nav>
-  <section>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <h1 class="logo"><i class="glyphicon glyphicon-tag"></i> My<span class="primary">Store</span></h1>
+          <p class="subtext">Bootstrap eCommerce Template</p>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <form class="form-inline">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Enter Password">
+            </div>
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </form>
+        </div>
+      </div>  
+    </header>
 
-  </section> 
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">My Account</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="search">
+              </div>
+              <button class="btn btn-default" type="submit">Search</button>
+            </form>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <!-- Nav tabs -->
+      <ul class="tablist" role="tablist">
+        <li role="presentation" class="active"><a href="#featured" aria-controls="featured" role="tab" data-toggle="tab">Featured Item</a></li>
+        <li role="presentation"><a href="#best" aria-controls="best" role="tab" data-toggle="tab">Best Seller</a></li>
+        <li role="presentation"><a href="#discount" aria-controls="discount" role="tab" data-toggle="tab">Summer Discount</a></li>
+        <li role="presentation"><a href="#premium" aria-controls="premium" role="tab" data-toggle="tab">Premium Product</a></li>
+        <li role="presentation"><a href="#gift" aria-controls="gift" role="tab" data-toggle="tab">Gift Ideas</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="featured">
+          <div class="tab-text">
+            <h2>Apple iPhone 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img src="img/iphone.png" class="slide-img">
+        </div>
+        <div role="tabpanel" class="tab-pane" id="best">
+          <div class="tab-text">
+            <h2>Microsoft Xbox One</h2>
+            <p>Nulla eget tortor eget augue mattis sagittis sed a metus. Sed mattis id ex nec varius. Aenean aliquam fermentum mauris, sed fringilla sapien mollis ac. Vestibulum facilisis molestie dolor.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img src="img/xbox.png" class="slide-img">
+        </div>
+        <div role="tabpanel" class="tab-pane" id="discount">
+          <div class="tab-text">
+            <h2>Sony Playstation 4</h2>
+            <p>Nunc fringilla erat eu commodo porta. Donec varius ex vel dapibus vulputate. Quisque non bibendum dui, non elementum elit. Duis consectetur metus sed turpis convallis condimentum.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img src="img/ps4.png" class="slide-img">
+        </div>
+        <div role="tabpanel" class="tab-pane" id="premium">
+          <div class="tab-text">
+            <h2>Microsoft Surface</h2>
+            <p>Maecenas pulvinar venenatis eros non egestas. Quisque dignissim ultrices eros non viverra. Pellentesque eu elit ac orci eleifend luctus. Vivamus nec felis odio.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img src="img/surface.png" class="slide-img">
+        </div>
+        <div role="tabpanel" class="tab-pane" id="gift">
+          <div class="tab-text">
+            <h2>Vizio Smart TV</h2>
+            <p>Fusce suscipit malesuada erat eget consequat. Sed porta, nisi in malesuada consectetur, justo neque iaculis felis, eu elementum odio dui at felis. Suspendisse sed tellus purus.</p>
+            <a href="product.html" class="btn btn-default">Read More</a>
+          </div>
+          <img src="img/tv.png" class="slide-img">
+        </div>
+      </div>
+    </div><!-- / .jumbotron -->
+
+    <section id="products">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="img/s5.png">
+            <div class="caption">
+              <h4 class="pull-right">$699.99</h4>
+              <h4><a href="product.html">Samsung Galaxy S5</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            </div>
+            <div class="ratings">
+              <p class="pull-right">15 Reviews</p>
+              <p>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="img/xbox.png">
+            <div class="caption">
+              <h4 class="pull-right">$399.99</h4>
+              <h4><a href="product.html">Xbox One</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            </div>
+            <div class="ratings">
+              <p class="pull-right">8 Reviews</p>
+              <p>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="img/ps4.png">
+            <div class="caption">
+              <h4 class="pull-right">$399.99</h4>
+              <h4><a href="product.html">Playstation 4</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            </div>
+            <div class="ratings">
+              <p class="pull-right">23 Reviews</p>
+              <p>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="img/tv.png">
+            <div class="caption">
+              <h4 class="pull-right">$999.99</h4>
+              <h4><a href="product.html">Visio Smart TV</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            </div>
+            <div class="ratings">
+              <p class="pull-right">3 Reviews</p>
+              <p>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="img/surface.png">
+            <div class="caption">
+              <h4 class="pull-right">$599.99</h4>
+              <h4><a href="product.html">Microsoft Surface</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            </div>
+            <div class="ratings">
+              <p class="pull-right">10 Reviews</p>
+              <p>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+                <span class="glyphicon glyphicon-star-empty"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="img/ipad.png">
+            <div class="caption">
+              <h4 class="pull-right">$599.99</h4>
+              <h4><a href="product.html">Apple iPad</a></h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non consectetur dolor, et blandit purus. Vivamus sollicitudin suscipit molestie. Pellentesque malesuada elit risus, vel sagittis elit varius vitae.</p>
+            </div>
+            <div class="ratings">
+              <p class="pull-right">17 Reviews</p>
+              <p>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- / #products -->
+    
+  </div> <!-- /container -->
+  
+  <footer>
+    <p>MyStore Copyright &copy; 2015. All rights Reserved. &middot; <a href="#">Terms &middot; <a href="#">Privacy</a></a></p>
+  </footer>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
